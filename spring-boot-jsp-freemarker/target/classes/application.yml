@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  mvc:
+    #static-path-pattern: /static/**
+    view:
+      prefix: /
+      suffix: .html
+  freemarker:
+    cache: false
+    prefix: /
+    suffix: .html
+    template-loader-path: classpath:/templates/
