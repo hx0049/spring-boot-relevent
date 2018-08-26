@@ -1,0 +1,26 @@
+#发送邮件配置
+spring:
+  mail:
+    host: smtp.126.com
+    username: huangxiang49@126.com
+    password: 126-smtp-鉴权码
+    properties:
+      mail:
+        smtp:
+            auth: true
+            timeout: 25000
+#接收邮件配置
+mail:
+  pop:
+    host: pop.qq.com
+    port: 995
+    user: 1038371123@qq.com
+    password: qq-smtp-鉴权码
+  pop3:
+    host: smtp.qq.com
+    port: 995
+    auth: true
+    socketFactory:
+      class: javax.net.ssl.SSLSocketFactory
+      fallback: false
+      port: 995

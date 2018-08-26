@@ -1,0 +1,24 @@
+spring:
+  mail:
+    host: smtp.126.com
+    username: huangxiang49@126.com
+    password: wshx,1128
+    properties:
+      mail:
+        smtp:
+            auth: true
+            timeout: 25000
+mail:
+  pop:
+    host: pop.qq.com
+    port: 995
+    user: 1038371123@qq.com
+    password: onzeprjtqvurbfif
+  pop3:
+    host: smtp.qq.com
+    port: 995
+    auth: true
+    socketFactory:
+      class: javax.net.ssl.SSLSocketFactory
+      fallback: false
+      port: 995
