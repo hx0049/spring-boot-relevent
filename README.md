@@ -5,3 +5,7 @@
 2.spring-boot-security：security使用自定义登录页，完美实现拦截进入登录页
 
 3.spring-boot-mail：spring boot集成电子邮件发送与接收解析功能
+
+4.chrome-spring-boot-starter:自定义spring boot启动器starter（规范化项目命名）
+
+5.spring-boot-webjar-generator:自定义webjar打包（规范化文件路径）
