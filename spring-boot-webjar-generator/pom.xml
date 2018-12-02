@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.webjars</groupId>
+    <artifactId>banner</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+  <build>
+      <plugins>
+          <plugin>
+              <artifactId>maven-source-plugin</artifactId>
+              <version>2.1</version>
+              <configuration>
+                  <attach>true</attach>
+              </configuration>
+              <executions>
+                  <execution>
+                      <phase>compile</phase>
+                      <goals>
+                          <goal>jar</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+      </plugins>
+      <resources>
+          <resource>
+              <directory>${project.basedir}/src/main/resources</directory>
+              <targetPath>${project.build.outputDirectory}/META-INF/resources</targetPath>
+          </resource>
+      </resources>
+  </build>
+
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>user-snapshots</id>
+            <name>User Project Snapshot</name>
+            <url>http://192.168.0.100:8081/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+        <repository>
+            <id>user-releases</id>
+            <name>User Project Release</name>
+            <url>http://192.168.0.100:8081/nexus/content/repositories/releases/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+    </distributionManagement>
+
+    <!--需要在maven的配置文件setting.xml中配置如下信息-->
+    <!--对应的id必须一致-->
+    <!--建议直接使用maven私服的deployment用户(需要开启该用户)部署或者新建用户来部署-->
+    <!--需要设置release和snapshots仓库可以部署-->
+    <!--
+    <servers>
+        <server>
+            <id>user-snapshots</id>
+            <username>***</username>
+            <password>***</password>
+        </server>
+        <server>
+            <id>user-releases</id>
+            <username>***</username>
+            <password>***</password>
+        </server>
+    </servers>
+    -->
+</project>
