@@ -41,13 +41,11 @@
             <id>user-snapshots</id>
             <name>User Project Snapshot</name>
             <url>http://192.168.0.100:8081/nexus/content/repositories/snapshots/</url>
-            <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
         <repository>
             <id>user-releases</id>
             <name>User Project Release</name>
             <url>http://192.168.0.100:8081/nexus/content/repositories/releases/</url>
-            <uniqueVersion>true</uniqueVersion>
         </repository>
     </distributionManagement>
 
