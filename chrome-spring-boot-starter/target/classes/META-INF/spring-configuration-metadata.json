@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "chrome",
+      "type": "com.hx.ChromeProperty",
+      "sourceType": "com.hx.ChromeProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "chrome.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.hx.ChromeProperty",
+      "defaultValue": false
+    },
+    {
+      "name": "chrome.path",
+      "type": "java.lang.String",
+      "sourceType": "com.hx.ChromeProperty"
+    },
+    {
+      "name": "chrome.url",
+      "type": "java.lang.String",
+      "sourceType": "com.hx.ChromeProperty"
+    }
+  ],
+  "hints": []
+}
