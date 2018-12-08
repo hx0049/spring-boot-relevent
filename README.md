@@ -9,3 +9,5 @@
 4.chrome-spring-boot-starter:自定义spring boot启动器starter（规范化项目命名）
 
 5.spring-boot-webjar-generator:自定义webjar打包（规范化文件路径）
+
+6.spring-boot-thrift:spring boot集成thrift，主要是如何引入thrift和thrift的使用
