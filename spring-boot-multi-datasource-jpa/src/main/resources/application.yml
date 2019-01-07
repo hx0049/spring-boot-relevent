@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    primary:
+      username: root
+      password: hx0049
+      url: jdbc:mysql://localhost:3306/db1?useUnicode=true&useSSL=true
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      username: root
+      password: hx0049
+      url: jdbc:mysql://localhost:3306/db2?useUnicode=true&useSSL=true
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    primary:
+      database: mysql
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL57Dialect
+    secondary:
+      database: mysql
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL57Dialect
