@@ -14,4 +14,4 @@
 
 7.spring-boot-multi-datasource-jpa:spring boot集成多个数据源，配置各自的jpa,可兼容各种不同数据库
 
-8.spring-boot-sqlite-jpa：spring boot集成sqlite数据源，并配置jpa
+8.spring-boot-sqlite-jpa：spring boot集成sqlite数据库，并配置jpa
