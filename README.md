@@ -11,3 +11,5 @@
 5.spring-boot-webjar-generator:自定义webjar打包（规范化文件路径）
 
 6.spring-boot-thrift:spring boot集成thrift，主要是如何引入thrift和thrift的使用
+
+7.spring-boot-multi-datasource-jpa:spring boot集成多个数据源，配置各自的jpa,可兼容各种不同数据库
